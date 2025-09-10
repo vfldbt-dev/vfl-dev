@@ -1,6 +1,7 @@
 {{ config(
     materialized='table',
-    schema='ANALYTICS'
+    schema='STAGING',
+    database='VFLPOC'
 ) }}
 
 
