@@ -9,6 +9,6 @@ SELECT
     --c."CLASS" as Tier
 FROM {{ ref("site_stg") }} s
 JOIN {{ ref("site2_stg") }} c
-    ON s.CMPCODE = c.CMPCODE
+    ON s.CTNAME = c.CTNAME
    --AND s.CODE = c.CODE
 
