@@ -7,8 +7,8 @@ SELECT
     s.ADDRESS as Store_Address,
     c.ZONE as Zone,
     --c."CLASS" as Tier
-FROM {{ ref("site_stg") }} s
-JOIN {{ ref("site2_stg") }} c
+FROM {{ ref("site_stg") }} c
+JOIN {{ ref("site2_stg") }} s
     ON s.CTNAME = c.CTNAME
    --AND s.CODE = c.CODE
 
