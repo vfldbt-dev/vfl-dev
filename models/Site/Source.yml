@@ -6,12 +6,6 @@ sources:
     schema: RAW
     tables:
       - name: admcity
-
-version: 2
-
-sources:
-  - name: raw
-    database: VFLPOC
-    schema: RAW
-    tables:
       - name: admsite
+
+
