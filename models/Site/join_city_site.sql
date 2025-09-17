@@ -7,7 +7,7 @@ s.CTNAME as Store_City,
 s.ADDRESS as Store_Address,
 
 c.ZONE as Zone,
-c.class as Tier
+c."class" as Tier
 
 from {{ref("site_stg")}} s
 join {{ref("site2_stg")}} c
