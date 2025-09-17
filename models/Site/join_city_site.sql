@@ -10,5 +10,5 @@ SELECT
 FROM {{ ref("site_stg") }} s
 JOIN {{ ref("site2_stg") }} c
     ON s.CMPCODE = c.CMPCODE
-   AND s.CODE = c.CODE
+   --AND s.CODE = c.CODE
 
