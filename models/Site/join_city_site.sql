@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+ew{{ config(materialized='view') }}
 
 SELECT 
     s.SLCODE as Site_Code,
