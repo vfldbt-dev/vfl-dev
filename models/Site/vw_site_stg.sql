@@ -3,7 +3,8 @@
 ) }}
 
 
-SELECT
+SELECT *
+/*
     CMPCODE,
     CNNAME,
     CODE,
@@ -16,5 +17,6 @@ SELECT
     STD,
     STNAME,
     ZONE
+    */
 --FROM vflpoc.raw.admcity;
 from {{ source('raw', 'admcity') }}

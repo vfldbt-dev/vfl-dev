@@ -2,7 +2,8 @@
     materialized='view',
 ) }}
 
-SELECT
+SELECT *
+/*
     CODE,
     NAME,
     SLCODE,
@@ -10,5 +11,6 @@ SELECT
     SHRTNAME,
     ADDRESS,
     CTNAME
+    */
 --FROM vflpoc.raw.admcity;
 from {{ source('raw', 'admsite') }}
