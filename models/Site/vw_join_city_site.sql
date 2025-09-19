@@ -2,7 +2,12 @@
 
 SELECT
     s.*,
-    c.ZONE       AS Zone
+        {{ select_with_alias("c", {
+        "CODE": "CITY_CODE",
+        "CTNAME": "CITY_NAME",
+        "CLASS": "CITY_CLASS"
+    }) }}
+    
     --c.* except (CODE,CTNAME)
 /*
     s.SLCODE     AS Site_Code,
