@@ -7,8 +7,11 @@ SELECT
         "CTNAME": "CITY_NAME",
         "CLASS": "CITY_CLASS"
     }) }}
-FROM {{ ref("vw_site2_stg") }} s
-LEFT JOIN {{ ref("vw_site_stg") }} c
+FROM {{ source('raw', 'admsite') }} s
+LEFT JOIN {{ source('raw', 'admcity') }} c
+
+--FROM {{ ref("vw_site2_stg") }} s
+--LEFT JOIN {{ ref("vw_site_stg") }} c
     ON s.CTNAME = c.CTNAME
 
    --AND s.CODE   = c.CODE
