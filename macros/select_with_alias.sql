@@ -1,7 +1,5 @@
-{% macro select_with_alias(table_alias, col_map) %}
-    {%- set selects = [] -%}
-    {%- for col, alias in col_map.items() %}
-        {{ selects.append(table_alias ~ '.' ~ col ~ ' AS ' ~ alias) }}
+{% macro select_with_alias(table_alias, rename_map) %}
+    {%- for col, alias in rename_map.items() -%}
+        {{ table_alias }}.{{ col }} AS {{ alias }}{% if not loop.last %}, {% endif %}
     {%- endfor -%}
-    {{ selects | join(',\n    ') }}
 {% endmacro %}
