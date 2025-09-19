@@ -2,7 +2,8 @@
 
 SELECT
     s.*,
-    c.* except (CODE,CTNAME)
+    c.ZONE       AS Zone
+    --c.* except (CODE,CTNAME)
 /*
     s.SLCODE     AS Site_Code,
     s.SHRTNAME   AS Store_Name,
