@@ -5,37 +5,41 @@ models:
     description: "Consolidated site-level data with business-friendly column names"
     tags: ["staging"]
     columns:
-      - name: "Site Code"
+      - name: SITE_CODE
         description: "Unique site code assigned by HQ"
-      - name: "Parent Site Initial"
+      - name: PSITE_INITIAL
         description: "Initial of the parent site"
-      - name: "Site Name"
+      - name: SITE_NAME
         description: "Name of the site"
-      - name: "Report Name"
+      - name: REPORTNAME
         description: "Report name for the site"
-      - name: "Site Type"
+      - name: SITETYPE
         description: "Type of the site (e.g., Flagship, Outlet)"
-      - name: "Installation Type"
+      - name: INSTALLATION_TYPE
         description: "Installation type of the site"
-      - name: "City Code"
+      - name: CTNAME
         description: "Unique city code"
-      - name: "Store Size"
+      - name: STORE_SIZE
         description: "Size of the store"
-      - name: "Store Start Date"
+      - name: STORE_STARTDT
         description: "Date when store started operations"
-      - name: "Store Closed Date"
+      - name: STORE_CLOSEDT
         description: "Date when store closed (if applicable)"
-      - name: "Age Category"
+      - name: AGE_CATEGORY
         description: "Category of store age: NEW / ANNUALISED / L2L / CLOSED"
-      - name: "State Name"
+      - name: STATE_NAME
         description: "Name of the state"
-      - name: "City Name"
+      - name: CITY_NAME
         description: "Name of the city"
-      - name: "Zone"
+      - name: ZONE
         description: "Zone classification based on state/city"
-      - name: "City Class"
+      - name: CITY_CLASS
         description: "City class (A/B/C)"
-      - name: "Data Version"
+      - name: DATA_VERSION
         description: "Version of the source data"
-      - name: "Upload Time"
+      - name: UPLOAD_TIME
         description: "Timestamp when data was loaded into DM_SITE"
+
+  - name: vw_join_city_site
+    description: "Join view of site and city data"
+    tags: ["staging"]
