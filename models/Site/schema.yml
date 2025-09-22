@@ -3,6 +3,7 @@ version: 2
 models:
   - name: DM_SITE
     description: "Consolidated site-level data with business-friendly column names"
+    tags: ["staging"]
     columns:
       - name: "Site Code"
         description: "Unique site code assigned by HQ"
