@@ -59,11 +59,7 @@ SELECT
     CITY.CLASS,
     SITE.DATAVERSION,
     CURRENT_TIMESTAMP AS UPLOAD_TIME
-/*
-FROM {{ ref('stg_site') }} SITE
-LEFT JOIN {{ ref('stg_city') }} CITY
-    ON SITE.CTNAME = CITY.CTNAME;
-    */
+
     FROM {{ source('raw', 'admsite') }} SITE
 LEFT JOIN {{ source('raw', 'admcity') }} CITY
     ON SITE.CTNAME = CITY.CTNAME;
