@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    database: VFLPOC
+    schema: RAW
+    tables:
+      - name: INVITEM
