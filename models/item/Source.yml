@@ -6,4 +6,3 @@ sources:
     schema: RAW
     tables:
       - name: invitem
-        identifier: INVITEM
