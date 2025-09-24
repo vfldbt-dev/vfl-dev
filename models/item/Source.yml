@@ -6,13 +6,24 @@ sources:
     schema: RAW
     tables:
       - name: fingl
+        identifier: FINGL
       - name: finsl
+        identifier: FINSL
       - name: fintaxmain
+        identifier: FINTAXMAIN
       - name: invarticle
+        identifier: INVARTICLE
       - name: invgrp
+        identifier: INVGRP
       - name: invhsnsacmain
+        identifier: INVHSNSACMAIN
       - name: invitem
+        identifier: INVITEM
       - name: prdcostsheethead
+        identifier: PRDCOSTSHEETHEAD
       - name: prdroutegrp
+        identifier: PRDROUTEGRP
       - name: prdroutegrpdet
+        identifier: PRDROUTEGRPDET
       - name: prdroutemain
+        identifier: PRDROUTEMAIN
