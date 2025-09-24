@@ -5,14 +5,14 @@ sources:
     database: VFLPOC
     schema: RAW
     tables:
-      - name: FINGL
-      - name: FINSL
-      - name: FINTAXMAIN
-      - name: INVARTICLE
-      - name: INVGRP
-      - name: INVHSNSACMAIN
-      - name: INVITEM
-      - name: PRDCOSTSHEETHEAD
-      - name: PRDROUTEGRP
-      - name: PRDROUTEGRPDET
-      - name: PRDROUTEMAIN
+      - name: fingl
+      - name: finsl
+      - name: fintaxmain
+      - name: invarticle
+      - name: invgrp
+      - name: invhsnsacmain
+      - name: invitem
+      - name: prdcostsheethead
+      - name: prdroutegrp
+      - name: prdroutegrpdet
+      - name: prdroutemain
