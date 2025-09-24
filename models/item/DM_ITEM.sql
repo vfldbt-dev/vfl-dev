@@ -10,4 +10,5 @@
 */
 
 SELECT * FROM 
-{{ source('raw', 'INVITEM') }}
+
+{{ source('raw', 'invitem') }} 
