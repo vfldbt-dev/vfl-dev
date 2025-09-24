@@ -5,10 +5,6 @@ sources:
     database: VFLPOC
     schema: RAW
     tables:
-      - name: invitem
-        identifier: INVITEM
-
-
       - name: fingl
         identifier: FINGL
       - name: finsl
