@@ -249,4 +249,4 @@ LEFT JOIN {{ source('raw', 'fintaxmain') }} f ON i.taxcode = f.taxcode
 LEFT JOIN {{ source('raw', 'fingl') }} gl ON i.GLCODE = gl.GLCODE
 LEFT JOIN {{ source('raw', 'finsl') }} sl ON i.slcode = sl.SLCODE
 LEFT JOIN {{ source('raw', 'invhsnsacmain') }} b ON i.invhsnsacmain_code = b.code
-LEFT JOIN {{ source('raw', 'prdcostsheethead') }} pch ON i.costsheet_code = pch.CODE;
+LEFT JOIN {{ source('raw', 'prdcostsheethead') }} pch ON i.costsheet_code = pch.CODE
