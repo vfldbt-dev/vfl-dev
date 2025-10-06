@@ -7,6 +7,7 @@ SELECT
     item.sectioncode,
     item.lev2grpname,
     item.grpcode,
+    item.barcode,
     item.grpname,
     rt.route,
     rt.routegrp,
