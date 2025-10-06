@@ -1,5 +1,9 @@
 {{ config(materialized='view') }}
 
+SELECT
+    {{ apply_aliases('dm_item') }}
+FROM (
+
 SELECT 
     item.icode,
     item.divisioncode,
@@ -81,3 +85,4 @@ LEFT JOIN (
     WHERE rowrank = 1
 ) rt
     ON item.icode = rt.icode
+)base
