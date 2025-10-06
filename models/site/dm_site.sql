@@ -67,4 +67,4 @@ SELECT
 FROM {{ source('raw', 'admsite') }} SITE
 LEFT JOIN {{ source('raw', 'admcity') }} CITY
     ON SITE.CTNAME = CITY.CTNAME
-) base
+ ) base
