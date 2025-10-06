@@ -1,6 +1,7 @@
 {{ config(materialized='view') }}
-
-
+SELECT
+    {{ site_apply_aliases('dm_site') }}
+FROM (
 
 SELECT
     SITE.CODE,
@@ -65,4 +66,4 @@ SELECT
 FROM {{ source('raw', 'admsite') }} SITE
 LEFT JOIN {{ source('raw', 'admcity') }} CITY
     ON SITE.CTNAME = CITY.CTNAME
-
+) bb
