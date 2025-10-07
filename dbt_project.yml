@@ -15,7 +15,7 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-vars:   # <-- ADD THIS BLOCK
+vars:
   column_alias_map:
     dm_site:
       code: "Site Code"
@@ -48,6 +48,7 @@ vars:   # <-- ADD THIS BLOCK
       class: "City Class"
       dataversion: "Data Version"
       upload_time: "Upload Time"
+
     dm_item:
       icode: "Item Code"
       divisioncode: "Division Code"
@@ -59,11 +60,11 @@ vars:   # <-- ADD THIS BLOCK
       grpname: "Group Name"
       route: "Route Name"
       routegrp: "Route Group"
-      cname1: "Design No"
-      cname2: "Colour"
-      cname4: "CName 4"
-      cname5: "CName 5"
-      cname6: "CName 6"
+      cname1: "Company Name 1"
+      cname2: "Company Name 2"
+      cname4: "Company Name 4"
+      cname5: "Company Name 5"
+      cname6: "Company Name 6"
       itemdesc2: "Item Description 2"
       itemdesc3: "Item Description 3"
       itemdesc4: "Item Description 4"
@@ -76,19 +77,18 @@ vars:   # <-- ADD THIS BLOCK
       udfstring09: "UDF String 09"
       udfstring10: "UDF String 10"
       udfstring20: "UDF String 20"
-      invattr1_code: "Attribute 1"
-      invattr1_name: "Attribute 1"
-      invattr4_code: "Attribute 4"
-      invattr4_name: "Attribute 4"
+      invattr1_code: "Attribute 1 Code"
+      invattr1_name: "Attribute 1 Name"
+      invattr4_code: "Attribute 4 Code"
+      invattr4_name: "Attribute 4 Name"
       mrp: "MRP"
       costrate: "Cost Rate"
       partyname: "Party Name"
       image_url: "Compressed Image URL"
       image_url_original: "Original Image URL"
-      extinct: "Extinct"
-      generated: "Generated"
+      extinct: "Extinct Flag"
+      generated: "Generated Flag"
       last_changed: "Last Changed Timestamp"
-
 
 
 models:
