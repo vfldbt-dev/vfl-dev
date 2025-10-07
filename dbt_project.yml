@@ -60,7 +60,7 @@ vars:
       grpname: "Group Name"
       route: "Route Name"
       routegrp: "Route Group"
-      cname1: "Company Name 1"
+      cname1: "CName 1"
       cname2: "Company Name 2"
       cname4: "Company Name 4"
       cname5: "Company Name 5"
