@@ -1,0 +1,56 @@
+version: 2
+
+models:
+  - name: dm_item
+    description: "Item master table with business-friendly field names and transformed attributes."
+    columns:
+      - name: icode
+        description: "Item Code from raw item table."
+      - name: divisioncode
+        description: "Division code directly mapped from raw item.divisioncode."
+      - name: lev1grpname
+        description: "Level 1 Group Name derived from v_item.lev1grpname."
+      - name: sectioncode
+        description: "Section code from raw item table."
+      - name: lev2grpname
+        description: "Level 2 Group Name derived from v_item.lev2grpname."
+      - name: grpcode
+        description: "Group Code mapped from item.grpcode."
+      - name: barcode
+        description: "Item barcode from raw item table."
+      - name: grpname
+        description: "Group Name derived from item.grpname."
+      - name: route
+        description: "Route Name, derived from latest effective date in prdroutemain/prdroutegrp tables."
+      - name: routegrp
+        description: "Route Group derived from prdroutegrp."
+      - name: cname1
+        description: "Company Name 1, from item.cname1."
+      - name: cname2
+        description: "Company Name 2, from item.cname2."
+      - name: itemdesc2
+        description: "Item Description 2, from item.itemdesc2."
+      - name: itemdesc3
+        description: "Item Description 3, from item.itemdesc3."
+      - name: itemdesc4
+        description: "Item Description 4, from item.itemdesc4."
+      - name: udfstring02
+        description: "User-defined field 02, mapped according to business logic."
+      - name: udfstring03
+        description: "User-defined field 03, mapped according to business logic."
+      - name: mrp
+        description: "Maximum Retail Price from raw item table."
+      - name: costrate
+        description: "Cost rate from raw item table."
+      - name: partyname
+        description: "Party name mapped from finsl.slname using item.partycode."
+      - name: image_url
+        description: "Compressed image URL generated from cname1 and cname2."
+      - name: image_url_original
+        description: "Original image URL generated from cname1 and cname2."
+      - name: extinct
+        description: "Flag indicating if item is extinct; default 'N'."
+      - name: generated
+        description: "Generated flag from raw item table."
+      - name: last_changed
+        description: "Timestamp of last change for the item record."
