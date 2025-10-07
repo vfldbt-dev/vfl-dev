@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: DM_SITE
+  - name: dm_site
     description: "Consolidated site-level data with business-friendly column names"
     tags: ["staging"]
     columns:
