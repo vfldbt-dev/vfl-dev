@@ -5,52 +5,102 @@ models:
     description: "Item master table with business-friendly field names and transformed attributes."
     columns:
       - name: icode
+        meta:
+          alias: "Item Code"
         description: "Item Code from raw item table."
       - name: divisioncode
+        meta:
+          alias: "Division Code"
         description: "Division code directly mapped from raw item.divisioncode."
       - name: lev1grpname
+        meta:
+          alias: "Level 1 Group Name"
         description: "Level 1 Group Name derived from v_item.lev1grpname."
       - name: sectioncode
+        meta:
+          alias: "Section Code"
         description: "Section code from raw item table."
       - name: lev2grpname
+        meta:
+          alias: "Level 2 Group Name"
         description: "Level 2 Group Name derived from v_item.lev2grpname."
       - name: grpcode
+        meta:
+          alias: "Group Code"
         description: "Group Code mapped from item.grpcode."
       - name: barcode
+        meta:
+          alias: "Barcode"
         description: "Item barcode from raw item table."
       - name: grpname
+        meta:
+          alias: "Group Name"
         description: "Group Name derived from item.grpname."
       - name: route
+        meta:
+          alias: "Route"
         description: "Route Name, derived from latest effective date in prdroutemain/prdroutegrp tables."
       - name: routegrp
+        meta:
+          alias: "Route Group"
         description: "Route Group derived from prdroutegrp."
       - name: cname1
+        meta:
+          alias: "Company Name 1"
         description: "Company Name 1, from item.cname1."
       - name: cname2
+        meta:
+          alias: "Company Name 2"
         description: "Company Name 2, from item.cname2."
       - name: itemdesc2
+        meta:
+          alias: "Item Description 2"
         description: "Item Description 2, from item.itemdesc2."
       - name: itemdesc3
+        meta:
+          alias: "Item Description 3"
         description: "Item Description 3, from item.itemdesc3."
       - name: itemdesc4
+        meta:
+          alias: "Item Description 4"
         description: "Item Description 4, from item.itemdesc4."
       - name: udfstring02
+        meta:
+          alias: "User Field 02"
         description: "User-defined field 02, mapped according to business logic."
       - name: udfstring03
+        meta:
+          alias: "User Field 03"
         description: "User-defined field 03, mapped according to business logic."
       - name: mrp
+        meta:
+          alias: "MRP"
         description: "Maximum Retail Price from raw item table."
       - name: costrate
+        meta:
+          alias: "Cost Rate"
         description: "Cost rate from raw item table."
       - name: partyname
+        meta:
+          alias: "Party Name"
         description: "Party name mapped from finsl.slname using item.partycode."
       - name: image_url
+        meta:
+          alias: "Image URL (Compressed)"
         description: "Compressed image URL generated from cname1 and cname2."
       - name: image_url_original
+        meta:
+          alias: "Image URL (Original)"
         description: "Original image URL generated from cname1 and cname2."
       - name: extinct
+        meta:
+          alias: "Extinct Flag"
         description: "Flag indicating if item is extinct; default 'N'."
       - name: generated
+        meta:
+          alias: "Generated Flag"
         description: "Generated flag from raw item table."
       - name: last_changed
+        meta:
+          alias: "Last Changed"
         description: "Timestamp of last change for the item record."
