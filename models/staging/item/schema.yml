@@ -3,6 +3,7 @@ version: 2
 models:
   - name: dm_item
     description: "Item master table with business-friendly field names and transformed attributes."
+    tags: ["staging"]
     columns:
       - name: icode
         meta:
