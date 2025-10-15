@@ -93,14 +93,13 @@ vars:
 
 models:
   my_new_project:
-    item:
-      +materialized: view
-      +schema: STAGING
+    staging:
       +database: VFLPOC
+      +schema: STAGING
+      +materialized: view
       +schema_generation: none
 
-    site:
-      +materialized: view
-      +schema: STAGING
-      +database: VFLPOC
-      +schema_generation: none
+      item:
+        +materialized: view
+      site:
+        +materialized: view
