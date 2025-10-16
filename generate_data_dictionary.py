@@ -28,7 +28,7 @@ for model_name, model_data in nodes.items():
     elements.append(Spacer(1, 8))
 
     # Table header
-    table_data = [["Column", "Type", "Name", "Comment"]]
+    table_data = [["Field Name", "Data Type", "Short Name", "Description"]]
 
     # Table rows
     for col, col_info in columns.items():
