@@ -6,7 +6,7 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, 
 from reportlab.lib.styles import getSampleStyleSheet
 
 # === Path to catalog.json ===
-catalog_path = r"C:\Users\subhra.sahu\Documents\python\generate_pdf\catalog.json"
+catalog_path = r"C:\Users\satyabrata.mishra\Downloads\dbt_project\catalog.json"
 output_path = os.path.join(os.path.dirname(catalog_path), "data_dictionary.pdf")
 
 # === Load JSON data ===
