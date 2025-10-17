@@ -1,4 +1,9 @@
-{{ config(materialized='view') }}
+{{ 
+  config(
+    materialized='view',
+    post_hook="{{ set_column_comments('dm_site') }}"
+  ) 
+}}
 
 SELECT
     {{ apply_aliases('dm_site') }}
