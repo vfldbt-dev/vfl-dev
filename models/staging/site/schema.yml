@@ -6,53 +6,70 @@ models:
     tags: ["staging"]
     columns:
       - name: site_code
-        alias: "Site Code"
+        meta:
+          alias: "Site Code"
         description: "Unique site code assigned by HQ"
       - name: psite_initial
-        alias: "Parent Site Initial"
+        meta:
+          alias: "Parent Site Initial"
         description: "Initial of the parent site"
       - name: site_name
-        alias: "Site Name"
+        meta:
+          alias: "Site Name"
         description: "Name of the site"
       - name: reportname
-        alias: "Report Name"
+        meta:
+          alias: "Report Name"
         description: "Report name for the site"
       - name: sitetype
-        alias: "Site Type"
+        meta:
+          alias: "Site Type"
         description: "Type of the site (e.g., Flagship, Outlet)"
       - name: installation_type
-        alias: "Installation Type"
+        meta:
+          alias: "Installation Type"
         description: "Installation type of the site"
       - name: ctname
-        alias: "City Code"
+        meta:
+          alias: "City Code"
         description: "Unique city code"
       - name: store_size
-        alias: "Store Size"
+        meta:
+          alias: "Store Size"
         description: "Size of the store"
       - name: store_startdt
-        alias: "Store Start Date"
+        meta:
+          alias: "Store Start Date"
         description: "Date when store started operations"
       - name: store_closedt
-        alias: "Store Closed Date"
+        meta:
+          alias: "Store Closed Date"
         description: "Date when store closed (if applicable)"
       - name: age
-        alias: "Age Category"
+        meta:
+          alias: "Age Category"
         description: "Category of store age: NEW / ANNUALISED / L2L / CLOSED"
       - name: stname
-        alias: "State Name"
+        meta:
+          alias: "State Name"
         description: "Name of the state"
       - name: cnname
-        alias: "City Name"
+        meta:
+          alias: "City Name"
         description: "Name of the city"
       - name: zone
-        alias: "Zone"
+        meta:
+          alias: "Zone"
         description: "Zone classification based on state/city"
       - name: class
-        alias: "City Class"
+        meta:
+          alias: "City Class"
         description: "City class (A/B/C)"
       - name: dataversion
-        alias: "Data Version"
+        meta:
+          alias: "Data Version"
         description: "Version of the source data"
       - name: upload_time
-        alias: "Upload Time"
+        meta:
+          alias: "Upload Time"
         description: "Timestamp when data was loaded into DM_SITE"
