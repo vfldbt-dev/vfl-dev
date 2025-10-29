@@ -4,9 +4,9 @@ models:
   - name: dm_item
     description: "Item master table with business-friendly field names and transformed attributes."
     meta:
-      steward: "data.governance@company.com"
-      approver: "finance.lead@company.com"
-      support: "data.support@company.com"
+      steward: "data.governance@manyavar.com"
+      approver: "finance.lead@manyavar.com"
+      support: "data.support@manyavar.com"
     tags: ["staging"]
     columns:
       - name: icode
