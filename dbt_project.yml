@@ -98,7 +98,7 @@ models:
       +schema: STAGING
       +materialized: view
       +schema_generation: none
-      +post-hook: "{{ post_model_hook() }}"
+      +post-hook: "{{ apply_governance_tags() }}"
 
       item:
         +materialized: view
