@@ -10,9 +10,9 @@ models:
     tags: ["staging"]
     config:
       post-hook:
-        - "ALTER VIEW {{ this }} SET TAG steward = '{{ meta.steward }}'"
-        - "ALTER VIEW {{ this }} SET TAG approver = '{{ meta.approver }}'"
-        - "ALTER VIEW {{ this }} SET TAG support = '{{ meta.support }}'"
+        - "ALTER VIEW {{ this }} SET TAG steward = '{{ model.meta.steward }}'"
+        - "ALTER VIEW {{ this }} SET TAG approver = '{{ model.meta.approver }}'"
+        - "ALTER VIEW {{ this }} SET TAG support = '{{ model.meta.support }}'"
     columns:
       - name: icode
         meta:
