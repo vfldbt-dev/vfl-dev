@@ -3,16 +3,7 @@ version: 2
 models:
   - name: dm_item
     description: "Item master table with business-friendly field names and transformed attributes."
-    meta:
-      steward: "data.governance@company.com"
-      approver: "finance.lead@company.com"
-      support: "data.support@company.com"
     tags: ["staging"]
-    config:
-      post-hook:
-        - "ALTER VIEW {{ this }} SET TAG steward = '{{ model.meta.steward }}'"
-        - "ALTER VIEW {{ this }} SET TAG approver = '{{ model.meta.approver }}'"
-        - "ALTER VIEW {{ this }} SET TAG support = '{{ model.meta.support }}'"
     columns:
       - name: icode
         meta:

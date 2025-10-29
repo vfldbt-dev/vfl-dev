@@ -1,4 +1,16 @@
-{{ config(materialized='view') }}
+{{ config(
+    materialized='view',
+    post_hook=[
+        "ALTER VIEW {{ this }} SET TAG steward = '{{ meta.steward }}'",
+        "ALTER VIEW {{ this }} SET TAG approver = '{{ meta.approver }}'",
+        "ALTER VIEW {{ this }} SET TAG support = '{{ meta.support }}'"
+    ],
+    meta={
+        "steward": "data.governance@company.com",
+        "approver": "finance.lead@company.com",
+        "support": "data.support@company.com"
+    }
+) }}
 
 SELECT
     {{ apply_aliases('dm_item') }}
