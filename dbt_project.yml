@@ -98,6 +98,7 @@ models:
       +schema: STAGING
       +materialized: view
       +schema_generation: none
+      +post-hook: "{{ post_model_hook() }}"
 
       item:
         +materialized: view
