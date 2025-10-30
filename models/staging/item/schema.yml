@@ -6,7 +6,7 @@ models:
     meta:
       steward: "data.governance@manyavar.com"
       approver: "finance.lead@manyavar.com"
-      support: "data.support@manyavar.com"
+      support: "https://manyavar.atlassian.net/jira/software/projects/TBLP/boards/12/backlog"
       data_domain: "Item master"
       pii_flag: "No"
     tags: ["staging"]
