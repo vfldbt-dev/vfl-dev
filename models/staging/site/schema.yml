@@ -3,6 +3,11 @@ version: 2
 models:
   - name: dm_site
     description: "Consolidated site-level data with business-friendly column names"
+    meta:
+      steward: "data.governance@manyavar.com"
+      approver: "finance.lead@manyavar.com"
+      support: "data.support@manyavar.com"
+      data_domain: "Site master"
     tags: ["staging"]
     columns:
       - name: site_code
