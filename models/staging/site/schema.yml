@@ -8,6 +8,7 @@ models:
       approver: "finance.lead@manyavar.com"
       support: "data.support@manyavar.com"
       data_domain: "Site master"
+      pii_flag: "No"
     tags: ["staging"]
     columns:
       - name: site_code
